@@ -1,0 +1,165 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <base href="https://de.mytaxi.com/">
+        <title> Login - mytaxi - The Taxi App</title>
+        <link rel="stylesheet" type="text/css" href="fileadmin/layout-1/css/style.min.css?1482393872" media="all">
+        <script src="../../src/js/core/tab.js"></script>
+    </head>
+    <body class="country-de js">
+    <header class="page-header wrap" id="js_page-header" style="height: 60px; background: rgb(74, 74, 74) none repeat scroll 0% 0%;max-width: 100%;">
+    
+    <nav class="main-nav" id="main-nav" itemscope="" itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul><li id="link22" class="first"><a href="en/passengers.html">History</a></li><li id="link23"><a href="en/taxifahrer.html">Login</a></li><li id="link34"><a href="en/jobs.html">Contacts</a></li><li id="link24"><a href="en/login.html">intranet</a></li><li id="link77" class="last active last_active"><a href="en/order-taxi.html">Log off</a></li></ul>
+    </nav>
+    <div class="page-header__inner page-header__inner--bg">
+        <a href="en/index.html"><img id="js_logo" class="logo" alt="mytaxi" style="width: 140px; height: 50px;" src="http://www.kbtu.kz/Content/Kbtu/images/logo.png" width="94" height="39"></a>
+        <a class="main-nav-btn main-nav-btn--open" id="main-nav-btn--open" href="en/order-taxi.html#main-nav"> <span>Menu open</span> </a>
+        <a class="main-nav-btn main-nav-btn--close" id="main-nav-btn--close" href="en/order-taxi.html#"> <span>Menu close</span> </a>
+    </div>
+    </header>
+        <div class="wrap">
+            <section class="header-pic header-pic--simple" style="padding-bottom: 15%">
+                <div class="header-pic__inner header-pic__inner--simple">
+                    <div class="wrapper" style="padding-top: 0px">
+                        <h1>KBTU UBER TAXI</h1>
+                        <h2></h2>
+                    </div>
+                </div>
+            </section>
+            <article class="content content--narrow" role="article"> 
+            
+                <div id="uid-250" class="layout-0">
+                                            
+                    <div id="googleMap" style="width:100%;height:400px;"></div>
+
+                    <script>
+                    function myMap() {
+                    var mapProp= {
+                        center:new google.maps.LatLng(43.2533961,76.9178805),
+                        zoom:15,
+                    };
+                    var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                    }
+                    </script>
+
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>             
+                </div>
+            <div style="float: left;position: fixed;margin-top: -400px;margin-left: 620px;border-width: 5px;">
+                <div>                   
+                    <div class="grid-taxi__col" style="width: 33%;">
+                        <div class="b-datetime-selects i-bem b-datetime-selects_js_inited" data-bem-auto-init="" data-bem="{&quot;b-datetime-selects&quot;:{}}">
+                            <span class="select select_size_s select_theme_normal select_datetime_select select_layout_fixed-210 i-bem select_js_inited" data-bem-auto-init="" data-bem-select-redraw="launch.exact_orders" data-bem="{&quot;select&quot;:{&quot;popupMods&quot;:{&quot;animate&quot;:&quot;yes&quot;,&quot;type&quot;:&quot;datetime&quot;},&quot;live&quot;:false}}">
+                                <select class="select__control" id="uniq14874140161187" name="orderDate" tabindex="-1" aria-hidden="true" style="width: 160px;">
+                                    <option class="select__option" value="0" selected="selected">На ближайшее время</option>
+                                    <option class="select__option" value="10">Через 10 минут</option>
+                                    <option class="select__option" value="15">Через 15 минут</option>
+                                    
+                                </select>
+                            </span>
+                        <div class="popup popup_theme_ffffff popup_autoclosable_yes popup_adaptive_yes popup_animate_yes popup_datetime_popup popup_type_othertime i-bem popup_js_inited" data-bem="{&quot;popup&quot;:{&quot;directions&quot;:{&quot;to&quot;:&quot;bottom&quot;,&quot;axis&quot;:&quot;left&quot;}}}">
+                        <div class="popup__under"></div>
+                        <i class="popup__tail"></i>
+                        <div class="popup__content">
+                            <div class="grid-taxi">
+                                <div class="grid-taxi__row">
+                                    <div class="grid-taxi__col"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>                   
+                    <div class="grid-taxi__col" style="width: 33%;">
+                        <div class="b-datetime-selects i-bem b-datetime-selects_js_inited" data-bem-auto-init="" data-bem="{&quot;b-datetime-selects&quot;:{}}">
+                            <span class="select select_size_s select_theme_normal select_datetime_select select_layout_fixed-210 i-bem select_js_inited" data-bem-auto-init="" data-bem-select-redraw="launch.exact_orders" data-bem="{&quot;select&quot;:{&quot;popupMods&quot;:{&quot;animate&quot;:&quot;yes&quot;,&quot;type&quot;:&quot;datetime&quot;},&quot;live&quot;:false}}" style="">
+                                <select class="select__control" id="uniq14874140161187" name="orderDate" tabindex="-1" aria-hidden="true" style="width: 160px;">
+                                    <option class="select__option" value="0" selected="selected">В одиночку       </option>
+                                    <option class="select__option" value="10">Вместе с другими</option>
+                                    
+                                    
+                                </select>
+                            </span>
+                        <div class="popup popup_theme_ffffff popup_autoclosable_yes popup_adaptive_yes popup_animate_yes popup_datetime_popup popup_type_othertime i-bem popup_js_inited" data-bem="{&quot;popup&quot;:{&quot;directions&quot;:{&quot;to&quot;:&quot;bottom&quot;,&quot;axis&quot;:&quot;left&quot;}}}">
+                        <div class="popup__under"></div>
+                        <i class="popup__tail"></i>
+                        <div class="popup__content">
+                            <div class="grid-taxi">
+                                <div class="grid-taxi__row">
+                                    <div class="grid-taxi__col"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                         
+
+                <div>                   
+                    <div class="grid-taxi__col" style="width: 33%;">
+                        <div class="b-datetime-selects i-bem b-datetime-selects_js_inited" data-bem-auto-init="" data-bem="{&quot;b-datetime-selects&quot;:{}}">
+                            <span class="select select_size_s select_theme_normal select_datetime_select select_layout_fixed-210 i-bem select_js_inited" data-bem-auto-init="" data-bem-select-redraw="launch.exact_orders" data-bem="{&quot;select&quot;:{&quot;popupMods&quot;:{&quot;animate&quot;:&quot;yes&quot;,&quot;type&quot;:&quot;datetime&quot;},&quot;live&quot;:false}}">
+                                <select class="select__control" id="uniq14874140161187" name="orderDate" tabindex="-1" aria-hidden="true" style="width: 160px;">
+                                    
+                                    <option class="select__option" value="0" selected="selected">Сделать заказ</option><option class="select__option" value="10">узнать цену</option>
+                                    
+                                    
+                                </select>
+                            </span>
+                        <div class="popup popup_theme_ffffff popup_autoclosable_yes popup_adaptive_yes popup_animate_yes popup_datetime_popup popup_type_othertime i-bem popup_js_inited" data-bem="{&quot;popup&quot;:{&quot;directions&quot;:{&quot;to&quot;:&quot;bottom&quot;,&quot;axis&quot;:&quot;left&quot;}}}">
+                        <div class="popup__under"></div>
+                        <i class="popup__tail"></i>
+                        <div class="popup__content">
+                            <div class="grid-taxi">
+                                <div class="grid-taxi__row">
+                                    <div class="grid-taxi__col"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>         
+                <div style="width: 80%" align="center">
+                    <button style="width: 160px;padding-top: 0;height: 69px;">
+                    <p style="font-size: 40px">submit</p>
+                    </button>
+                </div>
+            </div>
+            
+            </div></div></div></div></div></div>
+            <div>
+                <ul class="uk-list uk-list-line" style="margin-top: -400px;margin-left: -170px;position: fixed;">
+                        <li>Price : 35$</li>
+                        <li>Time  : 15min</li>
+                        <li>Each km: 1$</li>
+                        <li>Total : 50$</li>
+                        <li>dist  : 15km</li>
+                </ul>
+            </div>
+            </article>
+            <footer class="page-footer" role="contentinfo" style="margin-top: 300px">
+    <div class="wrapper">
+        <ul class="social-icons">
+            <li>
+                <a class="social-icon social-icon--twitter" href="https://twitter.com/mytaxi"><span>Twitter</span></a>
+            </li>
+            <li>
+                <a class="social-icon social-icon--facebook" href="https://www.facebook.com/mytaxi.de"><span>Facebook</span></a>
+            </li>
+            <li>
+                <a class="social-icon social-icon--youtube" href="https://www.youtube.com/user/myTaxinet"><span>YouTube</span></a>
+            </li>
+        </ul>
+        <nav class="page-footer__nav" id="page-footer__nav">
+            <ul><li id="link395" class="first"><a href="en/cookies.html">Cookies</a></li><li id="link32"><a href="en/press.html">Press</a></li><li id="link26"><a href="en/impressum.html">Legal notice</a></li><li id="link981"><a href="en/mytaxi-business-account.html">mytaxi Business Account</a></li><li id="link175"><a href="en/blog.html">Blog</a></li><li id="link977" class="last"><a href="en/help.html">Help</a></li></ul>
+            <div class="page-footer__lang-switcher" id="languagemenu">
+                <a href="en/order-taxi.html#languagemenu" class="page-footer__lang-open">Language</a><a href="en/order-taxi.html#page-footer__nav" class="page-footer__lang-close">Language</a><ul class="page-footer__lang-menu" id="language_switch"><li> <a href="taxi-bestellen.html">Deutsch</a> </li><li class="active"><a href="en/order-taxi.html">English</a></li></ul>
+            </div>
+        </nav>
+        <p class="copy">
+            Intelligent Apps GmbH © 2011-2016 All rights reserved
+        </p>
+    </div>
+</footer>
+        </div>
+
+    </body>
+</html>
